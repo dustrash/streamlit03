@@ -27,7 +27,7 @@ if not firebase_admin._apps:
     # Firebase 초기화
     cred = credentials.Certificate(service_account_info)
     firebase_admin.initialize_app(cred, {
-        'databaseURL': database_url
+        'databaseURL': 'https://teststreamlit-3fc73-default-rtdb.firebaseio.com/'
     })
 
 ref = db.reference("/users")
